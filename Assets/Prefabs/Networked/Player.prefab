@@ -18,7 +18,8 @@ GameObject:
   - component: {fileID: 1386208401442868223}
   - component: {fileID: 8573246535672665271}
   - component: {fileID: 482522056893347966}
-  m_Layer: 0
+  - component: {fileID: 3906048745106160184}
+  m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -194,7 +195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 0
+  GlobalObjectIdHash: 2528064331
   InScenePlacedSourceGlobalObjectIdHash: 0
   DeferredDespawnTick: 0
   Ownership: 1
@@ -273,7 +274,21 @@ MonoBehaviour:
   ShowTopMostFoldoutHeaderGroup: 1
   playerMovement: {fileID: 8398083184847919163}
   playerInput: {fileID: 1721069201452827188}
-  cameraFollow: {fileID: 0}
+--- !u!114 &3906048745106160184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8842942650333052576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4512c047127e914daa5aae993d8dd59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
+  Spawn1: {fileID: 0}
+  Spawn2: {fileID: 0}
 --- !u!1001 &1471815191169358114
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -282,6 +297,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1240874104343677067}
     m_Modifications:
+    - target: {fileID: 1000833921802350932, guid: 528f60aec4f2747ed9a8c7694b313e24, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1000833922525642785, guid: 528f60aec4f2747ed9a8c7694b313e24, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -326,11 +345,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: tank_basic_black
       objectReference: {fileID: 0}
+    - target: {fileID: 1000833922525642786, guid: 528f60aec4f2747ed9a8c7694b313e24, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4626572186462148808, guid: 528f60aec4f2747ed9a8c7694b313e24, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1000833922525642787, guid: 528f60aec4f2747ed9a8c7694b313e24, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4626572186462148808, guid: 528f60aec4f2747ed9a8c7694b313e24, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4077979267131521484}
+    - targetCorrespondingSourceObject: {fileID: 1000833921802350932, guid: 528f60aec4f2747ed9a8c7694b313e24, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1455008225112190738}
   m_SourcePrefab: {fileID: 100100000, guid: 528f60aec4f2747ed9a8c7694b313e24, type: 3}
 --- !u!4 &471628485628047632 stripped
 Transform:
@@ -347,3 +380,65 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1000833922525642785, guid: 528f60aec4f2747ed9a8c7694b313e24, type: 3}
   m_PrefabInstance: {fileID: 1471815191169358114}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1841793269740922998 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000833921802350932, guid: 528f60aec4f2747ed9a8c7694b313e24, type: 3}
+  m_PrefabInstance: {fileID: 1471815191169358114}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1455008225112190738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1841793269740922998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fe9db982b08ea14087112aab85820f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
+  BulletPrefab: {fileID: 6552068548746407876, guid: 738cf26db4a05fc44a06d550c67ee1df, type: 3}
+  attackSpeed: 0.5
+  bulletSpeed: 10
+--- !u!1 &6077628563587793386 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4626572186462148808, guid: 528f60aec4f2747ed9a8c7694b313e24, type: 3}
+  m_PrefabInstance: {fileID: 1471815191169358114}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4077979267131521484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6077628563587793386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e96cb6065543e43c4a752faaa1468eb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
+  NetworkTransformExpanded: 0
+  AuthorityMode: 1
+  TickSyncChildren: 0
+  UseUnreliableDeltas: 0
+  SyncPositionX: 1
+  SyncPositionY: 1
+  SyncPositionZ: 1
+  SyncRotAngleX: 1
+  SyncRotAngleY: 1
+  SyncRotAngleZ: 1
+  SyncScaleX: 0
+  SyncScaleY: 0
+  SyncScaleZ: 0
+  PositionThreshold: 0.001
+  RotAngleThreshold: 0.01
+  ScaleThreshold: 0.01
+  UseQuaternionSynchronization: 0
+  UseQuaternionCompression: 0
+  UseHalfFloatPrecision: 0
+  InLocalSpace: 0
+  SwitchTransformSpaceWhenParented: 0
+  Interpolate: 1
+  SlerpPosition: 0

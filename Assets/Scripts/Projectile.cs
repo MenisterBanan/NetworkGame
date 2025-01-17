@@ -10,9 +10,9 @@ public class Projectile : NetworkBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
-        if (collision.gameObject.layer == LayerMask.NameToLayer("Enemy"))
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
-            // collision.GetComponent<Enemy>().TakeDamage(1);
+            collision.GetComponent<PlayerNetworkThings>().TakeDamage(1);
             Destroy(gameObject);
         }
         else
