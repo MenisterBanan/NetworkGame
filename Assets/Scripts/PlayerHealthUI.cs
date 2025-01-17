@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerHealthUI : MonoBehaviour
 {
     PlayerNetworkThings playerNetworkThings;
-    [SerializeField] TextMeshProUGUI playerHealthText;
+   
     void Start()
     {
         NetworkManager.Singleton.OnClientConnectedCallback += OnClientConnected;
@@ -28,7 +28,7 @@ public class PlayerHealthUI : MonoBehaviour
 
     void OnPlayerHealthChanged(int newHealthValue)
     {
-        playerHealthText.text = "Healt" + newHealthValue;
+        
 
     }
 }
