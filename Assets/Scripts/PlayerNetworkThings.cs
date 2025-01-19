@@ -32,13 +32,6 @@ public class PlayerNetworkThings : NetworkBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.E))
-        {
-            if(IsOwner)
-            {
-                playerHealth.Value -= 1;
-            }
-        }
         PlayerDeath();
     }
 
